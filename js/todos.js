@@ -24,8 +24,8 @@ function paintTodo(newTodo) {
   span.innerText = newTodo.text;
   button.innerText = "❌";
 
-  li.appendChild(span);
   li.appendChild(button);
+  li.appendChild(span);
 
   button.addEventListener("click", removeTodo);
   todoList.appendChild(li);
