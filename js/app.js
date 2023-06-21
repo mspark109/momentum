@@ -11,7 +11,7 @@ if (localStorage.getItem("username")) {
 function showUsername() {
   const username = localStorage.getItem("username");
   loginForm.classList.add(HIDDEN_CLASSNAME);
-  greeting.innerText = `Hello ${username}`;
+  greeting.innerText = `Hello, ${username}`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 function onLoginSubmit(event) {
